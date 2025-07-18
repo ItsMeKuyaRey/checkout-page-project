@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+  </head>
+  <body>
+    <h1 id="title">Student Survey Form</h1>
+    <p id="description"> Please fill out this form ro help us understand your study habits</p>
+
+    <form id="survey-form">
+      <label id="name-label" for="name">Name:</label>
+      <input 
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required
+      />
+
+      <label id="email-label" for="email">Email:</label>
+      <input 
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required
+      />
+
+      <label id="number-label" for="number">Age:</label>
+      <input 
+        type="number"
+        id="number"
+        name="age"
+        min="10"
+        max="100"
+        placeholder="Enter your email"
+      />
+
+      <label for="dropdown">Which option best describe for your current role?</label>
+      <select id="dropdown" name="role">
+        <option value="student">Student</option>
+        <option value="worker">Worker</option>
+      </select>
+
+      <p>Would you recommed freeCodeCamp to a friend?</p>
+      <label><input type="radio" name=" Recommended" value="Yes">Yes</label>
+      <label><input type="radio" name=" Recommended" value="No">No</label>
+
+      <p>What topics are you interested in? (Select all that apply)</p>
+      <label><input type="checkbox" name="interest" value="html">HTML</label>
+      <label><input type="checkbox" name="interest" value="css">CSS</label>
+      <label><input type="checkbox" name="interest" value="js">JavaScript</label>
+
+      <br>
+      <br>
+      <label for="comments">Any additional comments?</label>
+      <br>
+      <textarea id="comments" name="comments" rows="4" cols="30" placeholder="Your message here..."></textarea>
+
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
