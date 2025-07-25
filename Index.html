@@ -2,66 +2,54 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Book Catalog</title>
+  <title>Checkout Page</title>
 </head>
 <body>
-  <table>
-    <thead>
-      <tr>
-        <th>Title</th>
-        <th>Author</th>
-        <th>Genre</th>
-        <th>Publication Year</th>
-      </tr>
-    </thead>
 
-    <tbody>
-      <tr>
-        <td>The Alchemist</td>
-        <td>Paulo Coelho</td>
-        <td>Adventure</td>
-        <td>1988</td>
-      </tr>
+  <!-- 1 & 2. Only one h1 element with the text "Checkout" -->
+  <h1>Checkout</h1>
 
-      <tr>
-        <td>Rich Dad Poor Dad</td>
-        <td>Robert Kiyosaki</td>
-        <td>Finance</td>
-        <td>1997</td>
-      </tr>
+  <!-- 3. First section right after the h1 -->
+  <section>
+    <!-- 4. h2 element with the text "Your Cart" -->
+    <h2>Your Cart</h2>
 
-      <tr>
-        <td>Atomic Habits</td>
-        <td>James Clear</td>
-        <td>Self-help</td>
-        <td>2018</td>
-      </tr>
+    <!-- 5. Image with alt text -->
+    <img src="https://cdn.freecodecamp.org/curriculum/labs/cube.jpg" alt="Rubik's Cube in Your Cart">
+  </section>
 
-      <tr>
-        <td>Start With Why</td>
-        <td>Simon Sinek</td>
-        <td>Motivational</td>
-        <td>2009</td>
-      </tr>
+  <!-- 3. Second section right after the first one -->
+  <section>
+    <!-- 6. h2 element with the text "Payment Information" -->
+    <h2>Payment Information</h2>
 
-      <tr>
-        <td>Deep Work</td>
-        <td>Cal Newport</td>
-        <td>Productivity</td>
-        <td>2016</td>
-      </tr>
-    </tbody>
+    <!-- 7. Form inside the second section -->
+    <form>
 
-    <tfoot>
-      <tr>
-        
-        <td colspan="1">This spans 2 columns</td>
-        <td>Normal Cell</td>
+      <!-- 8. Input with id and name of card-name + label -->
+      <label for="card-name">Name on Card:</label>
+      <input 
+        type="text" 
+        id="card-name" 
+        name="card-name" 
+        required 
+        aria-required="true"
+      >
 
-      </tr>
-    </tfoot>
+      <!-- 9. Input with id and name of card-number + label -->
+      <label for="card-number">Card Number:</label>
+      <input 
+        type="text" 
+        id="card-number" 
+        name="card-number" 
+        required 
+        aria-required="true"
+      >
 
-  </table>
+      <!-- Optional submit button -->
+      <button type="submit">Pay Now</button>
+    </form>
+  </section>
+
 </body>
 </html>
